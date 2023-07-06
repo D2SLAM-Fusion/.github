@@ -24,7 +24,7 @@ Tools: Data analysis tools for VIO, SLAM, Swarm and Controller
 
 Jetson Orin use OpenCV4.5.4 initially. However, some contrib_libs are needed. Therefore you need to compile OpenCV4.5.4 from source code.
 
-![image-20230706141151331](assets/image-20230706141151331.png)
+![image-20230706141151331](./assets/image-20230706141151331.png)
 
 Download
 
