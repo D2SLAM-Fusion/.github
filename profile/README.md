@@ -1,12 +1,52 @@
-## Hi there 👋
+## D2SLAM-Fusion
 
-<!--
+> In-door and out-door swarm slam system frame work in UAV Group
+>
+> All the codes running on Jetson Orin & Xavier NX & PC
 
-**Here are some ideas to get you started:**
+## Repo Trees
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+3rdParty: 3rd party libs needed for D2SLAM
+
+Drivers: Hardware drivers for Jetson ORin and Xavier
+
+Controllers: Autopilot and position controller based on PX4
+
+Tools: Data analysis tools for VIO, SLAM, Swarm and Controller 
+
+
+
+### Details
+
+#### 3rdparty
+
+##### OpenCV Jetson Orin
+
+Jetson Orin use OpenCV4.5.4 initially. However, some contrib_libs are needed. Therefore you need to compile OpenCV4.5.4 from source code.
+
+![image-20230706141151331](assets/image-20230706141151331.png)
+
+Download
+
+```shell
+wget -O opencv.zip https://github.com/opencv/opencv/archive/refs/tags/4.5.4.zip \
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/refs/tags/4.5.4.zip
+```
+
+Compile
+
+```shell
+unzip opencv.zip \
+unzip opencv_contrib.zip \
+cd opencv-4.5.4 \ 
+mkdir build \
+cd build \
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local/ -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -D CUDA_ARCH_BIN='8.7' -D WITH_CUDA=1 -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D CUDA_FAST_MATH=1 -D WITH_CUBLAS=1 -D OPENCV_GENERATE_PKGCONFIG=1 -D WITH_GTK_2_X=ON -D BUILD_PERF_TESTS=OFF -D BUILD_TESTS=OFF   .. \
+
+make -j8 \
+sudo make install
+
+```
+
+
+
