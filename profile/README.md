@@ -13,17 +13,15 @@
 
 
 
+## Buildding details
 
+### 3rdparty
 
-### Buildding details
-
-#### 3rdparty
-
-##### OpenCV Jetson Orin
+#### OpenCV Jetson Orin
 
 Jetson Orin use OpenCV4.5.4 initially. However, some contrib_libs are needed. Therefore you need to compile OpenCV4.5.4 from source code.
 
-![image-20230706141151331](./profile/assets/image-20230706141151331.png)
+![orin_jetpack](./attachments/orin_jetpack.png)
 
 Download
 
