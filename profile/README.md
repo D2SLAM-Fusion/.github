@@ -21,7 +21,7 @@
 
 Jetson Orin use OpenCV4.5.4 initially. However, some contrib_libs are needed. Therefore you need to compile OpenCV4.5.4 from source code.
 
-![orin_jetpack](attachments/orin_jetpack.png)
+![orin_jetpack](profile/attachments/orin_jetpack.png)
 
 Download
 
