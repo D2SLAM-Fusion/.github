@@ -4,17 +4,18 @@
 >
 > All the codes running on Jetson Orin & Xavier NX & PC
 
-## Repo Trees
+## Repository name rules
 
-3rdParty: 3rd party libs needed for project
-
-drivers: Hardware drivers for Jetson ORin and Xavier
-
-tools: Data analysis tools for VIO, SLAM, Swarm and Controller 
-
+1. perception:  perception algorithm
+2. control: all controller and planner
+3. 3rd-party:
+4. driver:  all devices' drivers
 
 
-### Details
+
+
+
+### Buildding details
 
 #### 3rdparty
 
