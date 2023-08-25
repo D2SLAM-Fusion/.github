@@ -6,13 +6,11 @@
 
 ## Repo Trees
 
-3rdParty: 3rd party libs needed for D2SLAM
+3rdParty: 3rd party libs needed for project
 
-Drivers: Hardware drivers for Jetson ORin and Xavier
+drivers: Hardware drivers for Jetson ORin and Xavier
 
-Controllers: Autopilot and position controller based on PX4
-
-Tools: Data analysis tools for VIO, SLAM, Swarm and Controller 
+tools: Data analysis tools for VIO, SLAM, Swarm and Controller 
 
 
 
