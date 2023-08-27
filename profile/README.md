@@ -10,6 +10,7 @@
 2. control: all controller and planner
 3. 3rd-party:
 4. driver:  all devices' drivers
+5. configs: configuration files for modulse or drone environment
 
 
 
