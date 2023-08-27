@@ -9,8 +9,8 @@
 1. perception:  perception algorithm
 2. control: all controller and planner
 3. 3rd-party:
-4. driver:  all devices' drivers
-5. configs: configuration files for modulse or drone environment
+4. drivers:  all devices' drivers
+5. configs:
 
 
 
@@ -22,7 +22,7 @@
 
 Jetson Orin use OpenCV4.5.4 initially. However, some contrib_libs are needed. Therefore you need to compile OpenCV4.5.4 from source code.
 
-![orin_jetpack](profile/attachments/orin_jetpack.png)
+![orin_jetpack](https://raw.githubusercontent.com/Peize-Liu/my-images/master/orin_jetpack.png)
 
 Download
 
