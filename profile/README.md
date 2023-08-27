@@ -8,9 +8,10 @@
 
 1. perception:  perception algorithm
 2. control: all controller and planner
-3. 3rd-party:
+3. 3rd-party: libs and installation scripts
 4. drivers:  all devices' drivers
-5. configs:
+5. configs: configuration files for modulse or drone environment
+6. tools: kalibration tools , bag record scripts and so on
 
 
 
